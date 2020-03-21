@@ -1,0 +1,82 @@
+:root {
+    --main-color: #da552f;
+}
+
+.ProductsList {
+    width: 700px;
+}
+
+.ProductsList .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
+
+.ProductsList .list .product {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.ProductsList .list .product .product__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ProductsList .list .product .product__description {
+    font-size: 15px
+}
+
+.ProductsList .list .product .product__description {
+    font-size: 15px
+}
+
+.ProductsList .list .product .product__button-access {
+    color: var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    border: 1px solid var(--main-color);
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 200ms;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ProductsList .list .product .product__button-access:hover {
+    background:var(--main-color);
+    color: #fff;
+}
+
+
+.ProductsList .actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 700px;
+    padding-bottom: 15px;
+}
+
+.ProductsList .actions button {
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background linear 200ms;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.ProductsList .actions button:hover {
+    background: #cc5535;
+}
+
+
